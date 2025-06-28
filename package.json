@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "ts-node src/05_nodes/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "",
@@ -13,8 +15,11 @@
   "description": "",
   "devDependencies": {
     "@types/express": "^5.0.3",
+    "@types/jest": "^30.0.0",
     "@types/mongodb": "^4.0.6",
     "@types/node": "^24.0.7",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
