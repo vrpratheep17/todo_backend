@@ -1,5 +1,5 @@
-import { Todo } from "../domain/Todo";
-import { TodoRepository } from "../application/repositories";
+import { Todo } from "../01_core/Todo";
+import { TodoRepository } from "../02_logic/repositories";
 
 export const createTodoRepositoryMemory = (): TodoRepository => {
   const todos: Todo[] = [];

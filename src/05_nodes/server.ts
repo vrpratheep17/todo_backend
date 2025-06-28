@@ -1,7 +1,7 @@
 import express from "express";
-import { connectToDatabase } from "./config/database";
-import { createTodoRepositoryMongo } from "./infrastructure/TodoRepositoryMongo";
-import { createTodoRoutes } from "./interfaces/TodoRoutes";
+import { connectToDatabase } from "../05_nodes/database";
+import { createTodoRepositoryMongo } from "../04_adopters/TodoRepositoryMongo";
+import { createTodoRoutes } from "../03_edges/TodoRoutes";
 
 const app = express();
 app.use(express.json());

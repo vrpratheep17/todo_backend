@@ -1,6 +1,6 @@
 import express from "express";
-import { createTodoRepositoryMemory } from "./infrastructure/TodoRepositoryMemory";
-import { createTodoRoutes } from "./interfaces/TodoRoutes";
+import { createTodoRepositoryMemory } from "./Adopters/TodoRepositoryMemory";
+import { createTodoRoutes } from "./Edges/TodoRoutes";
 
 const app = express();
 app.use(express.json());

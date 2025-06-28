@@ -1,4 +1,4 @@
-import { Todo } from "../domain/Todo";
+import { Todo } from "../01_core/Todo";
 
 export type TodoRepository = {
   create: (todo: Todo) => Promise<Todo>;
